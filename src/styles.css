@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: dark;
+}
+
+::selection {
+    @apply bg-indigo-200 text-indigo-800;
+}
+
+#root::before {
+    content: "";
+    background: url("./bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.App {
+    text-shadow: 3px 3px rgba(255,255,255,0.3);
+}
+
+.max-temp {
+    text-shadow: 3px 3px rgba(239, 68, 68, 0.3);
+}
+.min-temp {
+    text-shadow: 3px 3px rgba(59, 130, 246, 0.3);
+}
